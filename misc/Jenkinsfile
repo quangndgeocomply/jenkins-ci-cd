@@ -1,14 +1,15 @@
-node {
+pipeline {
+   tools {nodejs "node"}
    stage('Preparation') {
      checkout scm
    }
    stage('Install dependencis') {
-     step {
+     steps {
        sh 'npm install'
      }
    }
     stage('Install dependencis') {
-     step {
+     steps {
        sh 'npm test'
      }
    }
