@@ -10,6 +10,9 @@ jobs:
       - node/install-packages:
           pkg-manager: npm
       - run:
+          command: npm run lint
+          name: Check eslint
+      - run:
           command: npm run test
           name: Run unit tests
 
