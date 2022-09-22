@@ -4,7 +4,7 @@ describe('is-online', () => {
   beforeEach(() => {
     jest.resetModules();
   });
-  it('return true when offline 1', async () => {
+  it('return true when offline 21', async () => {
     const a = isOnline(4,5);
     expect(a).toBe(9)
   });
